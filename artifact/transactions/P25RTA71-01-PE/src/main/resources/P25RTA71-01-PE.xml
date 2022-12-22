@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="P25RTA71" application="P25R" version="01" country="PE" language="ES">
+	<paramsIn>
+		<dto order="1" name="EntityIn" mandatory="1" package="com.bbva.p25r.dto.entityin.EntityInDTO" artifactId="P25RCA61">
+			<dto order="1" name="cliente" mandatory="1" package="com.bbva.p25r.dto.entityin.CustomerDTO" artifactId="P25RCA61">
+				<parameter order="1" name="firsName" mandatory="1" type="String" size="40"/>
+				<parameter order="2" name="lastName" mandatory="1" type="String" size="40"/>
+				<dto order="3" name="direccion" mandatory="1" package="com.bbva.p25r.dto.entityin.DireccionDTO" artifactId="P25RCA61">
+					<parameter order="1" name="calle" mandatory="1" type="String" size="60"/>
+					<parameter order="2" name="casa" mandatory="1" type="String" size="4"/>
+				</dto>
+				<parameter order="4" name="contacto" mandatory="1" type="String" size="9"/>
+				<parameter order="5" name="id" mandatory="1" type="Long" size="8"/>
+			</dto>
+			<parameter order="2" name="fecha" mandatory="1" type="Date (YYYY-MM-DD)" size="0"/>
+		</dto>
+	</paramsIn>
+	<paramsOut/>
+	<description>TRX Update Customer</description>
+</transaction>
