@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "eaaace7e-ea21-4e15-90eb-8ba14d0e68a9",
+		"name": "Reto_Tecnico_Max_Costa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16216615"
+	},
+	"item": [
+		{
+			"name": "P25RTA61-01-PE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "remaining-time",
+						"type": "text",
+						"value": "25000"
+					},
+					{
+						"key": "country-code",
+						"type": "text",
+						"value": "PE"
+					},
+					{
+						"key": "service-id",
+						"type": "text",
+						"value": "SMGB18000069"
+					},
+					{
+						"key": "manager-user",
+						"type": "text",
+						"value": "P***8954"
+					},
+					{
+						"key": "operative-entity-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "entity-code",
+						"type": "text",
+						"value": "0011"
+					},
+					{
+						"key": "type-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "client-identification-type",
+						"type": "text",
+						"value": "6"
+					},
+					{
+						"key": "logical-transaction-code",
+						"type": "text",
+						"value": "P25RTA61"
+					},
+					{
+						"key": "aap",
+						"type": "text",
+						"value": "13000075"
+					},
+					{
+						"key": "channel-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "accessCode",
+						"type": "text",
+						"value": "P3568954"
+					},
+					{
+						"key": "physicalTransactionCode",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "version-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "header-name",
+						"type": "text",
+						"value": "QP06"
+					},
+					{
+						"key": "operation-date",
+						"type": "text",
+						"value": "160101"
+					},
+					{
+						"key": "user-code",
+						"type": "text",
+						"value": "ZG13001"
+					},
+					{
+						"key": "logical-terminal",
+						"type": "text",
+						"value": "TERM"
+					},
+					{
+						"key": "accounting-terminal",
+						"type": "text",
+						"value": "VIRT"
+					},
+					{
+						"key": "branch-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "authorization-code",
+						"type": "text",
+						"value": "000000000"
+					},
+					{
+						"key": "operation-time",
+						"type": "text",
+						"value": "175959"
+					},
+					{
+						"key": "language-code",
+						"type": "text",
+						"value": "es"
+					},
+					{
+						"key": "operative-branch-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "sequence-id",
+						"type": "text",
+						"value": "00034152"
+					},
+					{
+						"key": "authorization-version",
+						"type": "text",
+						"value": "00"
+					},
+					{
+						"key": "request-id",
+						"type": "text",
+						"value": "P25RTA61-01-PE"
+					},
+					{
+						"key": "contact-identifier",
+						"type": "text",
+						"value": "305db322-1d31-4bcb-a47d-4d443521fda4"
+					},
+					{
+						"key": "client-document",
+						"type": "text",
+						"value": "P***8954"
+					},
+					{
+						"key": "ip-address",
+						"type": "text",
+						"value": "181.176.107.254"
+					},
+					{
+						"key": "secondary-currency-code",
+						"type": "text",
+						"value": "USD"
+					},
+					{
+						"key": "environ-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "product-code",
+						"type": "text",
+						"value": "0001"
+					},
+					{
+						"key": "subtype-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "currency-code",
+						"type": "text",
+						"value": "PEN"
+					},
+					{
+						"key": "workstation-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "user-agent",
+						"type": "text",
+						"value": "GLOMO_PE/99.99.99 (Android;10;Xiaomi M2007J20CG)"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"EntityIn\": {\n        \"cliente\": {\n            \"firsName\": \"Jose\",\n            \"lastName\": \"Perez\",\n            \"direccion\": {\n                \"calle\": \"Av. Lejos\",\n                \"casa\": \"123\"\n            },\n            \"contacto\": \"95378388\"\n        },\n        \"fecha\": \"2022-12-21\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8101/APX_Runtime_Online/PGRestService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8101",
+					"path": [
+						"APX_Runtime_Online",
+						"PGRestService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P25RTA71-01-PE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "remaining-time",
+						"type": "text",
+						"value": "25000"
+					},
+					{
+						"key": "country-code",
+						"type": "text",
+						"value": "PE"
+					},
+					{
+						"key": "service-id",
+						"type": "text",
+						"value": "SMGB18000069"
+					},
+					{
+						"key": "manager-user",
+						"type": "text",
+						"value": "P***8954"
+					},
+					{
+						"key": "operative-entity-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "entity-code",
+						"type": "text",
+						"value": "0011"
+					},
+					{
+						"key": "type-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "client-identification-type",
+						"type": "text",
+						"value": "6"
+					},
+					{
+						"key": "logical-transaction-code",
+						"type": "text",
+						"value": "P25RTA71"
+					},
+					{
+						"key": "aap",
+						"type": "text",
+						"value": "13000075"
+					},
+					{
+						"key": "channel-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "accessCode",
+						"type": "text",
+						"value": "P3568954"
+					},
+					{
+						"key": "physicalTransactionCode",
+						"type": "text",
+						"value": ""
+					},
+					{
+						"key": "version-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "header-name",
+						"type": "text",
+						"value": "QP06"
+					},
+					{
+						"key": "operation-date",
+						"type": "text",
+						"value": "160101"
+					},
+					{
+						"key": "user-code",
+						"type": "text",
+						"value": "ZG13001"
+					},
+					{
+						"key": "logical-terminal",
+						"type": "text",
+						"value": "TERM"
+					},
+					{
+						"key": "accounting-terminal",
+						"type": "text",
+						"value": "VIRT"
+					},
+					{
+						"key": "branch-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "authorization-code",
+						"type": "text",
+						"value": "000000000"
+					},
+					{
+						"key": "operation-time",
+						"type": "text",
+						"value": "175959"
+					},
+					{
+						"key": "language-code",
+						"type": "text",
+						"value": "es"
+					},
+					{
+						"key": "operative-branch-code",
+						"type": "text",
+						"value": "9999"
+					},
+					{
+						"key": "sequence-id",
+						"type": "text",
+						"value": "00034152"
+					},
+					{
+						"key": "authorization-version",
+						"type": "text",
+						"value": "00"
+					},
+					{
+						"key": "request-id",
+						"type": "text",
+						"value": "P25RTA71-01-PE"
+					},
+					{
+						"key": "contact-identifier",
+						"type": "text",
+						"value": "305db322-1d31-4bcb-a47d-4d443521fda4"
+					},
+					{
+						"key": "client-document",
+						"type": "text",
+						"value": "P***8954"
+					},
+					{
+						"key": "ip-address",
+						"type": "text",
+						"value": "181.176.107.254"
+					},
+					{
+						"key": "secondary-currency-code",
+						"type": "text",
+						"value": "USD"
+					},
+					{
+						"key": "environ-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "product-code",
+						"type": "text",
+						"value": "0001"
+					},
+					{
+						"key": "subtype-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "currency-code",
+						"type": "text",
+						"value": "PEN"
+					},
+					{
+						"key": "workstation-code",
+						"type": "text",
+						"value": "01"
+					},
+					{
+						"key": "user-agent",
+						"type": "text",
+						"value": "GLOMO_PE/99.99.99 (Android;10;Xiaomi M2007J20CG)"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"EntityIn\": {\n        \"cliente\": {\n            \"firsName\": \"Max\",\n            \"lastName\": \"Luján\",\n            \"direccion\": {\n                \"calle\": \"Av. primavera\",\n                \"casa\": \"124\"\n            },\n            \"contacto\": \"9547878\",\n            \"id\": 25\n        },\n        \"fecha\": \"2022-12-21\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8101/APX_Runtime_Online/PGRestService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8101",
+					"path": [
+						"APX_Runtime_Online",
+						"PGRestService"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
