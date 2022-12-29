@@ -11,7 +11,7 @@ public interface P25RRA61 {
 	/**
 	 * The execute method...
 	 */
-	void execute();
+
 
 	Integer executeCreateCustomer(EntityInDTO entityInDTO);
 

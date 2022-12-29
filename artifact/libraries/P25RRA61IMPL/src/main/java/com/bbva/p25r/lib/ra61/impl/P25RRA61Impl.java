@@ -23,10 +23,7 @@ public class P25RRA61Impl extends P25RRA61Abstract {
     /**
      * The execute method...
      */
-    @Override
-    public void execute() {
-        // TODO - Implementation of business logic
-    }
+
 
     @Override
     public Integer executeCreateCustomer(final EntityInDTO entityInDTO) {
@@ -67,7 +64,7 @@ public class P25RRA61Impl extends P25RRA61Abstract {
                 } else
                     throw new NoResultException("Customer id " + requestSQL.get("customerId") + "is not registered");
             } catch (Exception keyException) {
-                LOGGER.info(String.format("[APX-R4] Error: {}", keyException.getMessage()));
+                LOGGER.info("[APX-R4] Error: %s", keyException.getMessage());
                 this.addAdvice(ERR_EXISTE_DATA);
             }
             LOGGER.info("[APX-R5] Customer update operation result  : {}", iResultUpdateSQL);
@@ -90,7 +87,7 @@ public class P25RRA61Impl extends P25RRA61Abstract {
         return iResultVerifySQL;
     }
 
-    public Map buildMapIn(EntityInDTO entityInDTO) {
+    public Map<String,Object> buildMapIn(EntityInDTO entityInDTO) {
         Map<String, Object> requestSQL = new HashMap<>();
         CustomerDTO customer = entityInDTO.getCliente();
         DireccionDTO direccion = customer.getDireccion();

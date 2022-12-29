@@ -30,5 +30,5 @@ END;
 
 --DELETE FROM T_P25R_CUSTOMER;
 
---select * from T_P25R_CUSTOMER;
+select * from T_P25R_CUSTOMER;
 

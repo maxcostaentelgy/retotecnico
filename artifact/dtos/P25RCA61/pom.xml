@@ -15,14 +15,8 @@
 		<osgi.version.manifest>0.0</osgi.version.manifest>
 		<sonar.coverage.exclusions>
 			/src/main/java/com/bbva/p25r/dto/entityin/CustomerDTO.java
-		</sonar.coverage.exclusions>
-		<sonar.coverage.exclusions>
 			/src/main/java/com/bbva/p25r/dto/entityin/DireccionDTO.java
-		</sonar.coverage.exclusions>
-		<sonar.coverage.exclusions>
 			/src/main/java/com/bbva/p25r/dto/entityin/EntityInDTO.java
-		</sonar.coverage.exclusions>
-		<sonar.coverage.exclusions>
 			/src/main/java/com/bbva/p25r/dto/util/CustomerConst.java
 		</sonar.coverage.exclusions>
 	</properties>

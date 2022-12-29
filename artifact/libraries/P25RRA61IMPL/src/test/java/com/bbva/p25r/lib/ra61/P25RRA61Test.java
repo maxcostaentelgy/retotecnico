@@ -62,11 +62,6 @@ public class P25RRA61Test {
 		return result;
 	}
 
-	@Test
-	public void executeTest(){
-		p25rRA61.execute();
-		Assert.assertEquals(0, context.getAdviceList().size());
-	}
 
 	@Test
 	public void testExecuteCreateCustomerOk(){
@@ -101,7 +96,7 @@ public class P25RRA61Test {
 		entityInDTO.setFecha(new Date());
 
 		CustomerDTO customer = new CustomerDTO();
-		customer.setId(Long.valueOf(22));
+		customer.setId(22L);
 		customer.setFirsName("Macgyver");
 		customer.setLastName("Barrientos");
 		customer.setContacto("123456789");
